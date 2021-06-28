@@ -3,6 +3,7 @@ import { withRouter, RouteComponentProps } from "react-router";
 import { Layout, Menu, Collapse } from 'antd';
 import { Link } from "react-router-dom";
 import  { useGA4React } from "ga-4-react";
+import { Helmet } from 'react-helmet';
 
 const { Header,  Content } = Layout;
 const { Panel } = Collapse;
@@ -18,6 +19,9 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
 
   return(
     <>
+        <Helmet>
+          <title>50+1 Anniversary Celebration : Schedule</title>
+        </Helmet>
         <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']}>
           <Menu.Item key='home'>
@@ -32,7 +36,6 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
           <div className="site-layout-content">
             <h1>Sandy and Dennis Gidich's 50+1 Anniversary Party!</h1>
             <Collapse defaultActiveKey={['2']} onChange={onPanelChange} >
-              
               <Panel header="Friday, July 2nd" key="2" >
               <h3>Dinner</h3>
                 <p>
@@ -51,22 +54,22 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                   33401 Webber Rd, Avon Lake, OH 44012
                   [<a href='https://www.google.com/maps/dir//weiss+field/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883085553c9462af:0x89097e0008d8a2c6?sa=X&ved=2ahUKEwiUiIG-67jxAhUJhuAKHQoXAHsQ9RcwHHoECEUQBA' target='_blank' rel='noreferrer'>Directions</a>]<br/>
                   For anyone who wants to see Fireworks on July 2nd<br/>
-                  
                   Schedule:<br/>
-                  <ul>
-                    <li>6:00PM-8:00PM Anne DeChant [<a href='https://www.anneedechant.com/' target='_blank' rel='noreferrer'>Website</a>]</li>
-                    <li>8:00PM-10:00PM Spagmatics - 80's tribute [<a href='https://thespazmatics.net/' target='_blank' rel='noreferrer'>Website</a>]</li>
-                    <li>10:00PM Fireworks</li>
-                  </ul>
-                  Food trucks:
-                  <ul>
-                    <li>Jones Bones BBQ</li>
-                    <li>Nelly Belly</li>
-                    <li>Kona Ice</li>
-                    <li>many more!</li>
-                  </ul>
-                  
                 </p>
+                <ul>
+                  <li>6:00PM-8:00PM Anne DeChant [<a href='https://www.anneedechant.com/' target='_blank' rel='noreferrer'>Website</a>]</li>
+                  <li>8:00PM-10:00PM Spagmatics - 80's tribute [<a href='https://thespazmatics.net/' target='_blank' rel='noreferrer'>Website</a>]</li>
+                  <li>10:00PM Fireworks</li>
+                </ul>
+                <p>
+                Food trucks:
+                </p>
+                <ul>
+                  <li>Jones Bones BBQ</li>
+                  <li>Nelly Belly</li>
+                  <li>Kona Ice</li>
+                  <li>many more!</li>
+                </ul>
               </Panel>
               <Panel header="Saturday, July 3nd" key="3">
                 <h3>4:00 PM - 5:30PM Dinner</h3>
@@ -77,9 +80,7 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                     [<a href='https://uniontownprovisions.com/' target='_blank' rel='noreferrer'>Website</a>] 
                     [<a href='https://www.google.com/maps/dir/39.9638528,-75.5662848/union+town+provisions/@40.6238901,-83.3605995,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88309db30f5f1039:0x86c6a31f441cbd36!2m2!1d-82.177013!2d41.466771' target='_blank' rel='noreferrer'>Directions</a>]<br/>
                   426 Broadway<br/>
-                  Live Jazz 3:30-6:30 by Daniel Spearman Music <em>[<a href='https://www.danielspearman.com/' target='_blank' rel='noreferrer'>Website</a>]</em>
-                    
-                  <br/>
+                  Live Jazz 3:30-6:30 by Daniel Spearman Music <em>[<a href='https://www.danielspearman.com/' target='_blank' rel='noreferrer'>Website</a>]</em><br/>
                   Food and Champagne Cocktail Specials<br/>
                 </p>
                 <h3>5:30 PM - ??PM Live Music</h3>
@@ -87,19 +88,20 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                   <b>Black River Landing</b>
                    [<a href='https://www.google.com/maps/dir//black+river+landing/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88309d1c6161f8e1:0xbcdd2630ffc2bddc?sa=X&ved=2ahUKEwio0vjc8LjxAhXEm-AKHYNMD5wQ9RcwHHoECEIQBA' target='_blank' rel='noreferrer'>Directions</a>]
                   <br/>
-
                   421 Black River Lane<br/>
                   Located just across the street from Union Town Provisions<br/>
                   Rockin’ On the River! Outdoor music venue<br/>
                   Gates open at 5:30 Opener at 6:15 and Headliner at 8:45<br/>
-                  <ul>
-                    <li>
-                      <b>Admission: $7.00 </b><br/>
-                    </li>
-                    <li>
-                      <b>Camp/Lawn Chairs/ Picnic Blankets:</b> please bring your own, for those flying in - we'll have we’ll have extra chairs for you<br/>
-                    </li>
-                  </ul>
+                </p>
+                <ul>
+                  <li>
+                    <b>Admission: $7.00 </b><br/>
+                  </li>
+                  <li>
+                    <b>Camp/Lawn Chairs/ Picnic Blankets:</b> please bring your own, for those flying in - we'll have we’ll have extra chairs for you<br/>
+                  </li>
+                </ul>
+                <p>
                   Featuring Classic Stones Live - Rolling Stones Tribute featuring the Glimmer Twins [<a href='http://theglimmertwins.com/'  target='_blank' rel='noreferrer'>Website</a>] with My Drunk’n Uncle [<a href='https://www.mdurocks.com/' target='_blank' rel='noreferrer'>Website</a><br/>
                   Food Trucks are available<br/>
                 </p>
@@ -107,11 +109,13 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
               <Panel header="Sunday, July 4th - Celebration" key="5">
                 <h3>5:00 PM - 11:00 PM Anniversary Party</h3>
                 <p>
-                <b>Residence Inn</b><br/>
-                  <ul>
-                    <li>5:00P - 5:30P Cocktails and Appetizers</li>
-                    <li>5:30P - 11PM Dinner &amp; Live Music</li>
-                  </ul>
+                  <b>Residence Inn</b><br/>
+                </p>
+                <ul>
+                  <li>5:00P - 5:30P Cocktails and Appetizers</li>
+                  <li>5:30P - 11PM Dinner &amp; Live Music</li>
+                </ul>
+                <p>
                   Sparklers and Sky Lanterns will follow for those staying at the Hotel<br/>
                   Should be able to see Fireworks at Black River Landing from Hotel (~10PM)<br/>
                 </p>

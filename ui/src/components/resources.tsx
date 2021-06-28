@@ -2,13 +2,17 @@ import React, { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Layout, Menu, Row, Col } from 'antd';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const { Header,  Content } = Layout;
 
 const Resources: FC< RouteComponentProps| any> = (props) => {
   return(
     <>
-<Header style={{position: "fixed", zIndex:1, width:"100%"}}>
+        <Helmet>
+          <title>50+1 Anniversary Celebration : Resources</title>
+        </Helmet>
+        <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['resources']}>
             <Menu.Item key='home'>
               <Link to={`/`}>Home</Link>
