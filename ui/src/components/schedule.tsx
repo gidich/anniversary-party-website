@@ -102,8 +102,8 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                 <p>
                 <b>Residence Inn</b><br/>
                   <ul>
-                    <li>Cocktails and Appetizers</li>
-                    <li>Dinner &amp; Live Music</li>
+                    <li>5:00P - 5:30P Cocktails and Appetizers</li>
+                    <li>5:30P - 11PM Dinner &amp; Live Music</li>
                   </ul>
                   Sparklers and Sky Lanterns will follow for those staying at the Hotel<br/>
                   Should be able to see Fireworks at Black River Landing from Hotel (~10PM)<br/>
