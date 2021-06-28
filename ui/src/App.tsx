@@ -30,7 +30,11 @@ function App() {
             <Resources />
           </Route>
         </Switch>
-        <Footer>Footer</Footer>
+        <Footer>
+          <div style={{textAlign:'center'}}>
+            50th+1 Anniversary Party - July 2-7th, 2021
+          </div>
+        </Footer>
       </Layout>
     </>
   );

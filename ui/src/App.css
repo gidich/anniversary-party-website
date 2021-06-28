@@ -23,4 +23,8 @@
   .ant-layout-content.site-layout {
     padding: 0 10px;
   }
+
+  .ant-layout-header {
+    padding: 0 10px;
+  }
 }
