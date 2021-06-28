@@ -6,6 +6,10 @@
 		{
 			"path": "data-access"
 		}
+		,
+		{
+			"path": ".github/workflows"
+		}
 	],
 	"settings": {
 		"debug.internalConsoleOptions": "neverOpen"
