@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+
+
+.ant-layout.layout {
+  min-height: 100vh;
+}
+
+.site-layout .site-layout-content {
+  background: #fff;
+  min-height: 85vh;
+  padding:24px;
+}
+.ant-layout-content.site-layout {
+  padding: 0 50px;
+  margin-top:64px;
+}
+
+@media(max-width:576px){
+  .site-layout .site-layout-content {
+    padding:24px 15px;
+    
+  }
+  .ant-layout-content.site-layout {
+    padding: 0 10px;
+  }
+}
