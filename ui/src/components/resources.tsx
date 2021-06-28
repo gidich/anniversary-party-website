@@ -1,12 +1,9 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router";
-import { Layout, Menu, Collapse, Row, Col } from 'antd';
+import { Layout, Menu, Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 
-
-
 const { Header,  Content } = Layout;
-const { Panel } = Collapse;
 
 const Resources: FC< RouteComponentProps| any> = (props) => {
   return(

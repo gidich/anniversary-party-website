@@ -1,14 +1,21 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router";
-import { Layout, Menu, Collapse, Row, Col } from 'antd';
+import { Layout, Menu, Collapse } from 'antd';
 import { Link } from "react-router-dom";
-
-
+import  { useGA4React } from "ga-4-react";
 
 const { Header,  Content } = Layout;
 const { Panel } = Collapse;
 
 const Schedule: FC< RouteComponentProps| any> = (props) => {
+  const ga = useGA4React();
+
+  var onPanelChange = (key:string | string[]) => {
+    if(ga && key ){
+      ga.gtag('event','viewDayPanel',{'visiblePanels': JSON.stringify(key)  as string});
+    }
+  }
+
   return(
     <>
         <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
@@ -24,9 +31,9 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
         <Content className="site-layout">
           <div className="site-layout-content">
             <h1>Sandy and Dennis Gidich's 50+1 Anniversary Party!</h1>
-            <Collapse defaultActiveKey={['2']} >
+            <Collapse defaultActiveKey={['2']} onChange={onPanelChange} >
               
-              <Panel header="Friday, July 2nd" key="2">
+              <Panel header="Friday, July 2nd" key="2" >
               <h3>Dinner</h3>
                 <p>
                   <b>Houlihan’s Restraurant</b>
