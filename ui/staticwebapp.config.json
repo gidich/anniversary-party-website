@@ -83,7 +83,7 @@
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
-    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; img-src www.googletagmanager.com"
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; img-src 'self' www.googletagmanager.com"
   },
   "mimeTypes": {
     ".json": "text/json"
