@@ -22,13 +22,11 @@
       "route": "/api/*",
       "headers": {
         "Server": "",
-        "X-Content-Type-Options": "nosniff",
-        "X-Frame-Options": "SAMEORIGIN",
         "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, HEAD, DELETE, PATCH",
         "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization, X-Apollo-Tracing, Apollo-Query-Plan-Experimental",
-        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'  https://www.googletagmanager.com; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; img-src www.googletagmanager.com"
+        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; img-src www.googletagmanager.com"
       }
     },
     {
@@ -83,7 +81,9 @@
     }
   },
   "globalHeaders": {
-    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net"
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; object-src 'none'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; img-src www.googletagmanager.com"
   },
   "mimeTypes": {
     ".json": "text/json"
