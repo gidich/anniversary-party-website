@@ -4,6 +4,7 @@ import { Layout, Menu, Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 import { useGA4React } from "ga-4-react";
+import { MenuOutlined } from '@ant-design/icons';
 
 const { Header,  Content } = Layout;
 
@@ -29,14 +30,19 @@ const Resources: FC< RouteComponentProps| any> = (props) => {
           <title>50+1 Anniversary Celebration : Resources</title>
         </Helmet>
         <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['resources']}>
-            <Menu.Item key='home'>
-              <Link to={`/`}>Home</Link>
-            </Menu.Item>
-            <Menu.Item key='resources'>
-              <Link to={`/resources`}>Resources</Link>
-            </Menu.Item>
-          </Menu>
+          <Row>
+            <Col xl={12} lg={12} md={12} sm={4} xs={4}>
+              <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['resources']} overflowedIndicator={<MenuOutlined />} >
+                <Menu.Item key='home'>
+                  <Link to={`/`}>Home</Link>
+                </Menu.Item>
+                <Menu.Item key='resources'>
+                  <Link to={`/resources`}>Resources</Link>
+                </Menu.Item>
+              </Menu>
+            </Col>
+            <Col xl={12} lg={12} md={12} sm={20} xs={20}></Col>
+          </Row>
         </Header>
         <Content className="site-layout">
           <div className="site-layout-content">

@@ -1,9 +1,11 @@
 import React, { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router";
-import { Layout, Menu, Collapse } from 'antd';
+import { Layout, Menu, Collapse, Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { useGA4React } from "ga-4-react";
 import { Helmet } from 'react-helmet';
+import { MenuOutlined } from '@ant-design/icons';
+
 
 const { Header,  Content } = Layout;
 const { Panel } = Collapse;
@@ -36,6 +38,10 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
         });
     }
   }
+  /*
+
+            
+          */
 
   return(
     <>
@@ -43,14 +49,19 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
           <title>50+1 Anniversary Celebration : Schedule</title>
         </Helmet>
         <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']}>
-          <Menu.Item key='home'>
-              <Link to={`/`}>Home</Link>
-            </Menu.Item>
-            <Menu.Item key='resources'>
-              <Link to={`/resources`}>Resources</Link>
-            </Menu.Item>
-          </Menu>
+          <Row>
+            <Col xl={12} lg={12} md={12} sm={4} xs={4}>
+              <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']} overflowedIndicator={<MenuOutlined />} >
+                <Menu.Item key='home'>
+                  <Link to={`/`}>Home</Link>
+                </Menu.Item>
+                <Menu.Item key='resources'>
+                  <Link to={`/resources`}>Resources</Link>
+                </Menu.Item>
+              </Menu>
+            </Col>
+            <Col xl={12} lg={12} md={12} sm={20} xs={20}></Col>
+          </Row>
         </Header>
         <Content className="site-layout">
           <div className="site-layout-content">
