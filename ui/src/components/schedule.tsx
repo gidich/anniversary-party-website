@@ -13,7 +13,14 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
 
   var onPanelChange = (key:string | string[]) => {
     if(ga && key ){
-      ga.gtag('event','viewDayPanel',{'visiblePanels': JSON.stringify(key)  as string});
+      ga.gtag(
+        'event',
+        'select_content',
+        {
+          'content_type':'day-panel',
+          'item_id': JSON.stringify(key)  as string
+        }
+      );
     }
   }
 
@@ -22,10 +29,10 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
     if(ga && targetUrl ){
       ga.gtag(
         'event',
-        targetUrl,
+        'click',
         {
-          'event_category': 'Outgoing Links',
-          'event_label': document.location.pathname + document.location.search
+          'page_location': targetUrl,
+          'page_referrer': document.location.pathname + document.location.search
         });
     }
   }

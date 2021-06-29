@@ -15,10 +15,10 @@ const Resources: FC< RouteComponentProps| any> = (props) => {
     if(ga && targetUrl ){
       ga.gtag(
         'event',
-        targetUrl,
+        'click',
         {
-          'event_category': 'Outgoing Links',
-          'event_label': document.location.pathname + document.location.search
+          'page_location': targetUrl,
+          'page_referrer': document.location.pathname + document.location.search
         });
     }
   }
