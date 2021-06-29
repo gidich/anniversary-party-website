@@ -3,24 +3,16 @@ import { withRouter, RouteComponentProps } from "react-router";
 import { Layout, Menu, Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import { useGA4React } from "ga-4-react";
+import { debug } from "console";
 
 const { Header,  Content } = Layout;
 
 const Resources: FC< RouteComponentProps| any> = (props) => {
-  const ga = useGA4React();
 
   const trackOutboundLink = (event:any) => {
-    var targetUrl = event.target.href;
-    if(ga && targetUrl ){
-      ga.gtag(
-        'event',
-        targetUrl,
-        {
-          'event_category': 'Outgoing Links',
-          'event_label': document.location.pathname + document.location.search
-        });
-    }
+    event.cancel();
+    debugger;
+    return false;
   }
 
   return(
@@ -49,8 +41,8 @@ const Resources: FC< RouteComponentProps| any> = (props) => {
                   <Col span={24}>
                     <p>
                       <b>Residence Inn by Marriott Cleveland/Avon at the Emerald Event Center</b>
-                      [<a href='https://www.marriott.com/hotels/travel/cleab-residence-inn-cleveland-avon-at-the-emerald-event-center/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]
-                        [<a href='https://www.google.com/maps/dir//Residence+Inn+by+Marriott+Cleveland%2FAvon+at+the+Emerald+Event+Center/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883091c5c16c34d5:0xf748d30534c6a6c8?sa=X&ved=2ahUKEwjZ99_81rvxAhVXSTABHfPPAn4Q9RcwE3oECFAQBQ' target='_blank' rel='noreferrer'  onClick={trackOutboundLink}>Directions</a>]
+                        [<a href='https://www.marriott.com/hotels/travel/cleab-residence-inn-cleveland-avon-at-the-emerald-event-center/' target='_blank' rel='noreferrer' onClick={(event) => trackOutboundLink(event)}>Website2</a>]
+                        [<a href='https://www.google.com/maps/dir//Residence+Inn+by+Marriott+Cleveland%2FAvon+at+the+Emerald+Event+Center/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883091c5c16c34d5:0xf748d30534c6a6c8?sa=X&ved=2ahUKEwjZ99_81rvxAhVXSTABHfPPAn4Q9RcwE3oECFAQBQ' target='_blank' rel='noreferrer'>Directions</a>]
                       <br/>
                       33040 Just imagine Drive, Avon<br/>
                       Just west of Cleveland Clinic Avon<br/>
@@ -84,9 +76,8 @@ const Resources: FC< RouteComponentProps| any> = (props) => {
                     <p>
                       <b>Tesla supercharger:</b><br/>
                       Sheetz 
-                        [<a href='https://www.tesla.com/findus/location/supercharger/sheffieldohsupercharger' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]
-                        
-                        [<a href='https://www.google.com/maps/dir/39.965686,-75.518309/Sheffield,+OH+Supercharge/@40.6040025,-83.3055462,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88309a3634324555:0xdc63757529f8959c!2m2!1d-82.0762515!2d41.4269492' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]
+                        [<a href='https://www.tesla.com/findus/location/supercharger/sheffieldohsupercharger' target='_blank' rel='noreferrer'>Website</a>]
+                        [<a href='https://www.google.com/maps/dir/39.965686,-75.518309/Sheffield,+OH+Supercharge/@40.6040025,-83.3055462,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88309a3634324555:0xdc63757529f8959c!2m2!1d-82.0762515!2d41.4269492' target='_blank' rel='noreferrer'>Directions</a>]
                         <br/>
                       5295 Detroit Rd <br/>
                       Sheffield Village <br/>

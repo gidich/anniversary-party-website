@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Layout, Menu, Collapse } from 'antd';
 import { Link } from "react-router-dom";
-import  { useGA4React } from "ga-4-react";
+import { useGA4React } from "ga-4-react";
 import { Helmet } from 'react-helmet';
 
 const { Header,  Content } = Layout;
@@ -14,6 +14,19 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
   var onPanelChange = (key:string | string[]) => {
     if(ga && key ){
       ga.gtag('event','viewDayPanel',{'visiblePanels': JSON.stringify(key)  as string});
+    }
+  }
+
+  const trackOutboundLink = (event:any) => {
+    var targetUrl = event.target.href;
+    if(ga && targetUrl ){
+      ga.gtag(
+        'event',
+        targetUrl,
+        {
+          'event_category': 'Outgoing Links',
+          'event_label': document.location.pathname + document.location.search
+        });
     }
   }
 
@@ -40,8 +53,9 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
               <h3>Dinner</h3>
                 <p>
                   <b>Houlihan’s Restraurant</b>
-                    [<a href='https://houlihans.com/Westlake' target='_blank' rel='noreferrer'>Website</a>]
-                    [<a href='https://www.google.com/maps/dir//Houlihan%E2%80%99s+Restaurant+westlake/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883092843bd580c1:0x9413e797a2d37ea4?sa=X&ved=2ahUKEwjy-Y7_6bjxAhWLiOAKHeRtB9kQ9RcwHnoECGgQBA' target='_blank' rel='noreferrer'>Directions</a>]
+                    [<a href='https://houlihans.com/Westlake' target='_blank' rel='noreferrer'  onClick={trackOutboundLink}>Website</a>]
+                    [<a href='https://www.google.com/maps/dir//Houlihan%E2%80%99s+Restaurant+westlake/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883092843bd580c1:0x9413e797a2d37ea4?sa=X&ved=2ahUKEwjy-Y7_6bjxAhWLiOAKHeRtB9kQ9RcwHnoECGgQBA' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]
+                    <br/>
                   25651 Detroit Rd., Westlake<br/>
                   440-808-9090<br/>
                   Great patio and indoor seating available<br/>
@@ -52,13 +66,13 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                 <p>
                   <b>Weiss Field</b><br/>
                   33401 Webber Rd, Avon Lake, OH 44012
-                  [<a href='https://www.google.com/maps/dir//weiss+field/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883085553c9462af:0x89097e0008d8a2c6?sa=X&ved=2ahUKEwiUiIG-67jxAhUJhuAKHQoXAHsQ9RcwHHoECEUQBA' target='_blank' rel='noreferrer'>Directions</a>]<br/>
+                  [<a href='https://www.google.com/maps/dir//weiss+field/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883085553c9462af:0x89097e0008d8a2c6?sa=X&ved=2ahUKEwiUiIG-67jxAhUJhuAKHQoXAHsQ9RcwHHoECEUQBA' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]<br/>
                   For anyone who wants to see Fireworks on July 2nd<br/>
                   Schedule:<br/>
                 </p>
                 <ul>
-                  <li>6:00PM-8:00PM Anne DeChant [<a href='https://www.anneedechant.com/' target='_blank' rel='noreferrer'>Website</a>]</li>
-                  <li>8:00PM-10:00PM Spagmatics - 80's tribute [<a href='https://thespazmatics.net/' target='_blank' rel='noreferrer'>Website</a>]</li>
+                  <li>6:00PM-8:00PM Anne DeChant [<a href='https://www.anneedechant.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]</li>
+                  <li>8:00PM-10:00PM Spagmatics - 80's tribute [<a href='https://thespazmatics.net/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]</li>
                   <li>10:00PM Fireworks</li>
                 </ul>
                 <p>
@@ -74,21 +88,22 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
               <Panel header="Saturday, July 3nd" key="3">
                 <h3>4:00 PM - 5:30PM Dinner</h3>
                 <p>
-                  Broadway, Lorain<br/>
+                  
                   <b>Union Town Provisions</b>
-                    [<a href='https://www.facebook.com/uniontownprovisions/' target='_blank' rel='noreferrer'>Facebook</a>]
-                    [<a href='https://uniontownprovisions.com/' target='_blank' rel='noreferrer'>Website</a>] 
-                    [<a href='https://www.google.com/maps/dir/39.9638528,-75.5662848/union+town+provisions/@40.6238901,-83.3605995,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88309db30f5f1039:0x86c6a31f441cbd36!2m2!1d-82.177013!2d41.466771' target='_blank' rel='noreferrer'>Directions</a>]<br/>
-                  426 Broadway<br/>
-                  Live Jazz 3:30-6:30 by Daniel Spearman Music <em>[<a href='https://www.danielspearman.com/' target='_blank' rel='noreferrer'>Website</a>]</em><br/>
+                    [<a href='https://www.facebook.com/uniontownprovisions/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Facebook</a>]
+                    [<a href='https://uniontownprovisions.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>] 
+                    <br/>
+                  426 Broadway, Lorain, OH 44052
+                  [<a href='https://www.google.com/maps/dir/39.9638528,-75.5662848/union+town+provisions/@40.6238901,-83.3605995,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88309db30f5f1039:0x86c6a31f441cbd36!2m2!1d-82.177013!2d41.466771' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]<br/>
+                  Live Jazz 3:30-6:30 by Daniel Spearman Music <em>[<a href='https://www.danielspearman.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]</em><br/>
                   Food and Champagne Cocktail Specials<br/>
                 </p>
                 <h3>5:30 PM - ??PM Live Music</h3>
                 <p>
-                  <b>Black River Landing</b>
-                   [<a href='https://www.google.com/maps/dir//black+river+landing/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88309d1c6161f8e1:0xbcdd2630ffc2bddc?sa=X&ved=2ahUKEwio0vjc8LjxAhXEm-AKHYNMD5wQ9RcwHHoECEIQBA' target='_blank' rel='noreferrer'>Directions</a>]
+                  <b>Black River Landing</b>&nbsp;
+                  [<a href='https://www.rockinontheriver.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]
                   <br/>
-                  421 Black River Lane<br/>
+                  421 Black River Lane [<a href='https://www.google.com/maps/dir//black+river+landing/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88309d1c6161f8e1:0xbcdd2630ffc2bddc?sa=X&ved=2ahUKEwio0vjc8LjxAhXEm-AKHYNMD5wQ9RcwHHoECEIQBA' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]<br/>
                   Located just across the street from Union Town Provisions<br/>
                   Rockin’ On the River! Outdoor music venue<br/>
                   Gates open at 5:30 Opener at 6:15 and Headliner at 8:45<br/>
@@ -102,7 +117,7 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                   </li>
                 </ul>
                 <p>
-                  Featuring Classic Stones Live - Rolling Stones Tribute featuring the Glimmer Twins [<a href='http://theglimmertwins.com/'  target='_blank' rel='noreferrer'>Website</a>] with My Drunk’n Uncle [<a href='https://www.mdurocks.com/' target='_blank' rel='noreferrer'>Website</a><br/>
+                  Featuring Classic Stones Live - Rolling Stones Tribute featuring the Glimmer Twins [<a href='http://theglimmertwins.com/'  target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>] with My Drunk’n Uncle [<a href='https://www.mdurocks.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]<br/>
                   Food Trucks are available<br/>
                 </p>
               </Panel>
@@ -128,17 +143,21 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                 </p>
                 <h3><em>10:00 PM Fireworks - Rain Date</em></h3>
                 <p>
-                  <b>BlackRiver Landing</b>
+                  <b>Black River Landing</b>&nbsp;
+                  [<a href='https://www.rockinontheriver.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]
+                  <br/>
+                  421 Black River Lane [<a href='https://www.google.com/maps/dir//black+river+landing/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88309d1c6161f8e1:0xbcdd2630ffc2bddc?sa=X&ved=2ahUKEwio0vjc8LjxAhXEm-AKHYNMD5wQ9RcwHHoECEIQBA' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]
+                  <br/>
                   <em>Only If fireworks are cancelled on the 4th</em>, Blackriver landing fireworks will take place at Blackriver Landing on the 5th
-                  [<a href='https://www.lorainport.com/events-calendar/annual-independence-day-fireworks/' target='_blank' rel='noreferrer'>Website</a>]
+                  [<a href='https://www.lorainport.com/events-calendar/annual-independence-day-fireworks/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]
                 </p>
               </Panel>
               <Panel header="Tuesday, July 6th" key="7">
                 <h3>Cedar Point</h3>
                 <p>
                   Reservations are no longer required for those who want to enjoy the day at the point!<br/>
-                  [<a href='https://www.cedarpoint.com/daily-tickets' target='_blank' rel='noreferrer'>Tickets</a>]
-                  [<a href='https://www.google.com/maps/dir/39.965686,-75.518309/cedar+point+amusement+park/@40.2813634,-83.5868981,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883a44453409f6b7:0xae0d3d15735875a7!2m2!1d-82.6835206!2d41.482207' target='_blank' rel='noreferrer'>Directions</a>]
+                  [<a href='https://www.cedarpoint.com/daily-tickets' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Tickets</a>]
+                  [<a href='https://www.google.com/maps/dir/39.965686,-75.518309/cedar+point+amusement+park/@40.2813634,-83.5868981,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883a44453409f6b7:0xae0d3d15735875a7!2m2!1d-82.6835206!2d41.482207' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]
                 </p>
               </Panel>
             </Collapse>
