@@ -15,8 +15,8 @@
   margin-top:64px;
 }
 
-.ant-menu-submenu.ant-menu-submenu-popup {
-  top:60px !important;
+.ant-menu-submenu.ant-menu-submenu-popup .ant-menu.ant-menu-sub.ant-menu-vertical {
+  margin-top:-10px;
 }
 
 @media(max-width:576px){
@@ -34,7 +34,7 @@
     height: 40px;
     line-height: 40px;
   }
-  .ant-menu-submenu.ant-menu-submenu-popup {
-    top:40px  !important;
-  }
+  
+
+  
 }
