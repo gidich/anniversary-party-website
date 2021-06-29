@@ -30,19 +30,14 @@ const Resources: FC< RouteComponentProps| any> = (props) => {
           <title>50+1 Anniversary Celebration : Resources</title>
         </Helmet>
         <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
-          <Row>
-            <Col xl={12} lg={12} md={12} sm={4} xs={4}>
-              <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['resources']} overflowedIndicator={<MenuOutlined />} >
-                <Menu.Item key='home'>
-                  <Link to={`/`}>Home</Link>
-                </Menu.Item>
-                <Menu.Item key='resources'>
-                  <Link to={`/resources`}>Resources</Link>
-                </Menu.Item>
-              </Menu>
-            </Col>
-            <Col xl={12} lg={12} md={12} sm={20} xs={20}></Col>
-          </Row>
+          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['resources']} overflowedIndicator={<div> <MenuOutlined /> </div>} >
+            <Menu.Item key='home'>
+              <Link to={`/`}>Home</Link>
+            </Menu.Item>
+            <Menu.Item key='resources'>
+              <Link to={`/resources`}>Resources</Link>
+            </Menu.Item>
+          </Menu>
         </Header>
         <Content className="site-layout">
           <div className="site-layout-content">

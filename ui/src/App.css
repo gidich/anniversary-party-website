@@ -19,22 +19,23 @@
   margin-top:-10px;
 }
 
-@media(max-width:576px){
+@media(max-width:768px){
   .site-layout .site-layout-content {
     padding:24px 15px;
     
   }
   .ant-layout-content.site-layout {
     padding: 0 10px;
-    margin-top:40px;
+    margin-top:50px;
+  }
+
+  .ant-layout-header .ant-menu {
+    width:100px;
   }
 
   .ant-layout-header {
     padding: 0 10px;
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
   }
-  
-
-  
 }
