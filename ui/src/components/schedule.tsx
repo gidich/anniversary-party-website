@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { withRouter, RouteComponentProps } from "react-router";
+import { withRouter, RouteComponentProps, useHistory } from "react-router";
 import { Layout, Menu, Collapse, Row, Col } from 'antd';
 import { Link } from "react-router-dom";
 import { useGA4React } from "ga-4-react";
@@ -12,6 +12,7 @@ const { Panel } = Collapse;
 
 const Schedule: FC< RouteComponentProps| any> = (props) => {
   const ga = useGA4React();
+  const history = useHistory();
 
   var onPanelChange = (key:string | string[]) => {
     if(ga && key ){
@@ -43,18 +44,35 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
             
           */
 
+
+  const menuItemSelected = async (e: any) => {
+    switch (e.key) {
+      case 'home':
+        history.push(`/`);
+        break;
+      case 'resources':
+        history.push(`/resources`);
+        break;
+    }
+  };
+  
   return(
     <>
         <Helmet>
           <title>50+1 Anniversary Celebration : Schedule</title>
         </Helmet>
         <Header style={{position: "fixed", zIndex:1, width:"100%"}}>
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']} overflowedIndicator={<div> <MenuOutlined /> </div>} >
+          <Menu 
+            onClick={(e: any) => menuItemSelected(e)}
+            theme="dark" 
+            mode="horizontal" 
+            defaultSelectedKeys={['home']} 
+            overflowedIndicator={<div> <MenuOutlined /> </div>} >
             <Menu.Item key='home'>
-              <Link to={`/`}>Home</Link>
+              Home
             </Menu.Item>
             <Menu.Item key='resources'>
-              <Link to={`/resources`}>Resources</Link>
+              Resources
             </Menu.Item>
           </Menu>
         </Header>
