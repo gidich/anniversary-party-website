@@ -126,7 +126,8 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                     <br/>
                   426 Broadway, Lorain, OH 44052
                   [<a href='https://www.google.com/maps/dir/39.9638528,-75.5662848/union+town+provisions/@40.6238901,-83.3605995,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88309db30f5f1039:0x86c6a31f441cbd36!2m2!1d-82.177013!2d41.466771' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Directions</a>]<br/>
-                  Live Jazz 3:30-6:30 by Daniel Spearman Music <em>[<a href='https://www.danielspearman.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]</em><br/>
+                 
+                 
                   Food and Champagne Cocktail Specials<br/>
                 </p>
                 <h3>5:30 PM - ??PM Live Music</h3>
