@@ -13,7 +13,7 @@ const AttendeeListPropTypes = {
       firstName: PropTypes.string.isRequired,
       lastName: PropTypes.string.isRequired,
       guests: PropTypes.number.isRequired,
-      dateConfirmed: PropTypes.instanceOf(Date).isRequired
+      dateConfirmed: PropTypes.instanceOf(Date)
     }).isRequired
   ).isRequired
 }
@@ -27,7 +27,7 @@ interface AttendeeListProp {
     firstName:string,
     lastName:string,
     guests:number,
-    dateConfirmed:Date
+    dateConfirmed?:Date
   }[]
 }
 
@@ -58,7 +58,7 @@ export const AttendeeList: FC<AttendeeListProps> = ({
           title: 'Confirmed',
           dataIndex: 'dateConfirmed',
           key: 'dateConfirmed',
-          render: (dateConfirmed: Date) => <>{dateConfirmed.toISOString()}</>
+          render: (dateConfirmed?: Date) => <>{dateConfirmed?dateConfirmed.toISOString():'Not Registered'}</>
         },
       ]
       return <>
@@ -77,7 +77,7 @@ export const AttendeeList: FC<AttendeeListProps> = ({
             <Card title={`${attendee.firstName} ${attendee.lastName}`}>
               <Descriptions>
                 <Descriptions.Item label="Guests">{attendee.guests}</Descriptions.Item>
-                <Descriptions.Item label="DateConfirmed">{attendee.dateConfirmed.toISOString()}</Descriptions.Item>
+                <Descriptions.Item label="DateConfirmed">{attendee.dateConfirmed?attendee.dateConfirmed.toISOString():'Not Registered'}</Descriptions.Item>
               </Descriptions>
             </Card>
           </List.Item>

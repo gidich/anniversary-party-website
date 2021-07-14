@@ -5,25 +5,40 @@ import '../App.css';
 const sampleData = {
   attendees: [
     {
-      id: 1234,
+      id: 1,
       firstName: 'Jane',
       lastName: 'Doe',
       guests:1,
       dateConfirmed: new Date('01/01/2021')
     },
     {
-      id: 1234,
+      id: 2,
       firstName: 'John',
       lastName: 'Doe',
       guests:1,
       dateConfirmed: new Date('01/01/2021')
     },
     {
-      id: 1234,
+      id: 3,
       firstName: 'Sam',
       lastName: 'Smith',
       guests:1,
       dateConfirmed: new Date('01/01/2021')
+    }
+    ,
+    {
+      id: 4,
+      firstName: 'Ama',
+      lastName: 'Danara',
+      guests:1,
+      dateConfirmed: null
+    },
+    {
+      id: 5,
+      firstName: 'Rami',
+      lastName: 'Amol',
+      guests:1,
+      dateConfirmed: null
     }
 ]
 } as AttendeeData
@@ -50,7 +65,25 @@ ContainerDefault.parameters = {
           variables: {status: 'registered'}
         },
         result: {
-          data: sampleData
+          data: {attendees:sampleData.attendees.filter(attendee => attendee.dateConfirmed !== null)}
+        }
+      },
+      {
+        request: {
+          query: Queries.GetAttendesQuery,
+          variables: {status: 'notregistered'}
+        },
+        result: {
+          data: {attendees:sampleData.attendees.filter(attendee => attendee.dateConfirmed == null)}
+        }
+      },
+      {
+        request: {
+          query: Queries.GetAttendesQuery,
+          variables: {status: 'all'}
+        },
+        result: {
+          data: {attendees:sampleData.attendees}
         }
       }
     ]

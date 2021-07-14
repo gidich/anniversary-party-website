@@ -1,7 +1,7 @@
-import { FC } from 'react';
-
+import { FC,useState } from 'react';
 import { useQuery, gql } from "@apollo/client";
 import { AttendeeList } from './attendee-list';
+import { AttendeeListFilter } from './attendee-list-filter';
 
 const GET_ATTENDEES = gql`
   query GetAttendees($status: String!) {
@@ -25,7 +25,7 @@ export interface AttendeeData {
     firstName:string,
     lastName:string,
     guests:number,
-    dateConfirmed:Date
+    dateConfirmed?:Date
   }[]
 }
 
@@ -36,9 +36,11 @@ interface AttendeeVars {
 export const AttendeeListContainer: FC<any> = 
   ({props:any}) => {
   
+  const [filter, setFilter] = useState<string>("registered");
+
   const { loading, error, data} = useQuery<AttendeeData,AttendeeVars>(GET_ATTENDEES,{
     variables: {
-      status: 'registered'
+      status: filter
     }
   })
 
@@ -54,14 +56,16 @@ export const AttendeeListContainer: FC<any> =
     </>
   } 
 
-  if (typeof data?.attendees === 'undefined' ) {
+  if (typeof data === 'undefined' ) {
     return <>
+      <AttendeeListFilter filter={filter} onFilterChange={setFilter} />
       <div>No Data...</div>
     </>
   }
 
   return <>
     <div>Attendees!</div>
+    <AttendeeListFilter filter={filter} onFilterChange={setFilter} />
     <AttendeeList attendees={data.attendees} />
   </>
   

@@ -23,8 +23,7 @@ const sampleData = {
       id: 1234,
       firstName: 'Sam',
       lastName: 'Smith',
-      guests:1,
-      dateConfirmed: new Date('01/01/2021')
+      guests:1
     }
 ]
 } as AttendeeListProps
