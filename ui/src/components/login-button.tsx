@@ -23,7 +23,6 @@ interface LoginButtonProp {
   onLogout?: () => void,
 }
 
-
 export type LoginButtonProps = InferProps<typeof LoginButtonPropTypes> & LoginButtonProp;
 
 export const LoginButton: FC<LoginButtonProps> = ({
