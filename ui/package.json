@@ -30,7 +30,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "chromatic": "npx chromatic --project-token=4cbd0fd6d619"
   },
   "eslintConfig": {
     "extends": [
@@ -70,6 +71,7 @@
     "@storybook/testing-react": "0.0.18",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "chromatic": "^5.9.2",
     "storybook-addon-apollo-client": "^4.0.8"
   }
 }

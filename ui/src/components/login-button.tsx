@@ -1,6 +1,9 @@
 import { FC } from 'react';
 import { Button } from 'antd';
+import { LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import PropTypes, { InferProps } from 'prop-types';
+import './login-button.css';
+
 
 const LoginButtonPropTypes = {
   isLoggedIn: PropTypes.bool,
@@ -30,5 +33,20 @@ export const LoginButton: FC<LoginButtonProps> = ({
   onLogin,
   onLogout
   }) => {
-    return isLoggedIn?<Button type="primary" onClick={onLogout}>Log Out</Button>:<Button onClick={onLogin}>Log In</Button>
+
+    var properButton;
+      if(isLoggedIn=== true){
+        properButton = <Button type="primary" icon={<LogoutOutlined />} onClick={onLogout}>Log Out</Button>;
+      }else{
+        properButton =<Button type="primary" icon={<LoginOutlined />} onClick={onLogin}>Log In</Button>
+      }
+    
+
+    return <>
+      <div className='loginButton'>
+        {properButton}
+      </div>
+    </>
+
+     
 }
