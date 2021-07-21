@@ -10,7 +10,7 @@ const GET_ATTENDEES = gql`
       firstName
       lastName
       guests
-      dateConfirmed
+      dateConfirmed     
     }
   }
 `;
@@ -30,6 +30,9 @@ export interface AttendeeData {
 }
 
 interface AttendeeVars {
+  /** 
+  Provides a filter of the type of attendees
+  */
   status: string
 }
 
