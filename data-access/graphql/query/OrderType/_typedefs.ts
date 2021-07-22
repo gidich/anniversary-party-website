@@ -1,0 +1,6 @@
+export {typeDefs as _base} from './_base'
+export {typeDefs as amt} from './amt'
+export {typeDefs as customerId} from './customerId'
+export {typeDefs as items} from './items'
+export {typeDefs as orderDate} from './orderDate'
+export {typeDefs as orderId} from './orderId'

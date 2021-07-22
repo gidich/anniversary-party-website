@@ -1,0 +1,7 @@
+export {resolvers as _base} from './_base'
+export {resolvers as reviewDesc} from './reviewDesc'
+export {resolvers as reviewId} from './reviewId'
+export {resolvers as customerId} from './customerId'
+export {resolvers as reviewDate} from './reviewDate'
+export {resolvers as productId} from './productId'
+export {resolvers as rating} from './rating'

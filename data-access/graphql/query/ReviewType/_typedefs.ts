@@ -1,0 +1,7 @@
+export {typeDefs as _base} from './_base'
+export {typeDefs as reviewDesc} from './reviewDesc'
+export {typeDefs as reviewId} from './reviewId'
+export {typeDefs as customerId} from './customerId'
+export {typeDefs as reviewDate} from './reviewDate'
+export {typeDefs as productId} from './productId'
+export {typeDefs as rating} from './rating'

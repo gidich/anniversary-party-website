@@ -1,0 +1,5 @@
+export * as Query from '../query/Query/_resolvers'
+export * as OrderItemType from '../query/OrderItemType/_resolvers'
+export * as OrderType from '../query/OrderType/_resolvers'
+export * as ProductType from '../query/ProductType/_resolvers'
+export * as ReviewType from '../query/ReviewType/_resolvers'
