@@ -1,0 +1,6 @@
+export {resolvers as _base} from './_base'
+export {resolvers as amt} from './amt'
+export {resolvers as customerId} from './customerId'
+export {resolvers as items} from './items'
+export {resolvers as orderDate} from './orderDate'
+export {resolvers as orderId} from './orderId'

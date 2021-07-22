@@ -1,0 +1,5 @@
+export {typeDefs as _base} from './_base'
+export {typeDefs as ordersByCustomerId} from './ordersByCustomerId'
+export {typeDefs as reviewsByCustomerId} from './reviewsByCustomerId'
+export {typeDefs as reviewsByProductId} from './reviewsByProductId'
+export {typeDefs as productByProductId} from './productByProductId'
