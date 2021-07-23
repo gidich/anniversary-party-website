@@ -5,7 +5,6 @@ import { GET_ORDERS_BY_CUSTOMER_ID, OrderContainer, OrdersData } from './order-c
 const sampleOrderData = { 
   orders : [
     {
-   
       __typename: 'OrderType',
       amt: 299,
       customerId: 'customerId',
@@ -13,14 +12,12 @@ const sampleOrderData = {
       orderId: 'orderId',
       items: [
         {
-
           __typename: 'OrderItemType',
           productId: 'productId1',
           qty: 4,
           price: 50
         },
         {
-
           __typename: 'OrderItemType',
           productId: 'productId2',
           qty: 1,
@@ -29,7 +26,6 @@ const sampleOrderData = {
       ]
     },
     {
-     
       __typename: 'OrderType',
       amt: 100,
       customerId: 'customerId',
@@ -37,7 +33,6 @@ const sampleOrderData = {
       orderId: 'orderId',
       items: [
         {
-  
           __typename: 'OrderItemType',
           productId: 'productId1',
           qty: 2,
@@ -46,7 +41,7 @@ const sampleOrderData = {
       ]
     }
   ] 
-} as OrdersData
+}
 
 export default {
   title: 'Example/OrderContainer',
@@ -71,7 +66,7 @@ ContainerDefault.parameters = {
           variables: {customerId: '123'}
         },
         result: {
-          data: sampleOrderData
+          data: {ordersByCustomerId:sampleOrderData.orders} as OrdersData
         }
       }
     ]

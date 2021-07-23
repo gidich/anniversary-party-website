@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 import './App.css';
 import Schedule from './components/schedule';
 import Resources from './components/resources';
+import { CommercePage } from './components/commerce-page';
 import { Switch, Route, useLocation } from "react-router-dom";
 
 import  { useGA4React } from "ga-4-react";
@@ -24,6 +25,9 @@ function App() {
       <Layout className="layout">
         <Switch>
           <Route exact path="/">
+            <CommercePage customerId={'c101'} productId={'p101'}/>
+          </Route>
+          <Route path="/Schedule">
             <Schedule />
           </Route>
           <Route path="/Resources">

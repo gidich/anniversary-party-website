@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import GA4React from 'ga-4-react';
+import ApolloConnection from './components/apollo-connection';
 
 const gaMeasurementId = process.env.REACT_APP_GA_MEASUREMENT_ID as string;
 const ga4react = new GA4React(gaMeasurementId,{ debug_mode: process.env.NODE_ENV !== 'production'});
@@ -20,7 +21,10 @@ const ga4react = new GA4React(gaMeasurementId,{ debug_mode: process.env.NODE_ENV
   ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App />
+        <ApolloConnection>
+          <App />
+        </ApolloConnection>
+        
       </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')

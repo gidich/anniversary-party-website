@@ -18,7 +18,7 @@ const graphqlHandler = (server, context, req) => {
   const graphqlHandlerObj = server.createHandler({
     cors: {
       origin: "*",
-      preflightContinue: false, 
+      preflightContinue: true, 
       credentials: true,
     },
   })

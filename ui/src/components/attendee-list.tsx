@@ -33,6 +33,7 @@ export interface AttendeeListProp {
   Sets button functionality based on the current user's logged in status.
   */
   attendees: {
+    __typename?: 'Attendee',
     id:number,
     firstName:string,
     lastName:string,
