@@ -7,6 +7,7 @@ import {
   InMemoryCache,
   from,
 } from '@apollo/client';
+import { BatchHttpLink } from "@apollo/client/link/batch-http";
 
 import { setContext } from '@apollo/client/link/context';
 
@@ -40,8 +41,16 @@ const ApolloConnection: FC<any> = (props) => {
     }
   });
 
+  /*
   const httpLink = createHttpLink({
     uri: apolloUrl,
+  });
+  */m
+
+  const httpLink = new BatchHttpLink({ 
+    uri: apolloUrl,
+    batchMax: 5, // No more than 5 operations per batch
+    batchInterval: 20 // Wait no more than 20ms after first batched operation
   });
 
   const cache = new InMemoryCache();
