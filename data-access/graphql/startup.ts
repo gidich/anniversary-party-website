@@ -6,7 +6,7 @@ import schema from './schema'
 const serverConfig = () => {
   return {
     schema: schema,
-    playground: true
+    playground: { endpoint: "/api/graphql" }
   }
 }
 

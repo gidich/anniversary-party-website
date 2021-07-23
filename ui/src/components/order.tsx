@@ -8,7 +8,6 @@ export const OrderFields = gql`
   fragment OrderFields on OrderType{    
     amt
     customerId
-    items
     orderDate
     orderId
     items {
