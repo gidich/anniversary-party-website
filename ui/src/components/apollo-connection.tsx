@@ -45,7 +45,7 @@ const ApolloConnection: FC<any> = (props) => {
   const httpLink = createHttpLink({
     uri: apolloUrl,
   });
-  */m
+  */
 
   const httpLink = new BatchHttpLink({ 
     uri: apolloUrl,
