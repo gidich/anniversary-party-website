@@ -1,33 +1,22 @@
 import { FC,useState } from 'react';
 import { useQuery, gql } from "@apollo/client";
-import { AttendeeList } from './attendee-list';
+import { AttendeeList, AttendeeListFields, AttendeeListProp } from './attendee-list';
 import { AttendeeListFilter } from './attendee-list-filter';
 
 const GET_ATTENDEES = gql`
   query GetAttendees($status: String!) {
     attendees(status: $status) {
-      id
-      firstName
-      lastName
-      guests
-      dateConfirmed     
+      ...AttendeeListFields   
     }
   }
+  ${AttendeeListFields}
 `;
 
 export const Queries = {
   GetAttendesQuery : GET_ATTENDEES
 }
 
-export interface AttendeeData {
-  attendees: {
-    id:number,
-    firstName:string,
-    lastName:string,
-    guests:number,
-    dateConfirmed?:Date
-  }[]
-}
+export interface AttendeeData extends AttendeeListProp{}
 
 interface AttendeeVars {
   /** 

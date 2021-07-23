@@ -25,9 +25,8 @@ const sampleData = {
       lastName: 'Smith',
       guests:1
     }
-]
+  ]
 } as AttendeeListProps
-
 
 export default {
   title: 'Example/AttendeeList',

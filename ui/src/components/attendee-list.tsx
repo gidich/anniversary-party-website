@@ -1,7 +1,17 @@
 import { FC } from 'react';
+import { gql } from "@apollo/client";
 import { Card, Descriptions, Grid, List, Table } from 'antd';
 import PropTypes, { InferProps } from 'prop-types';
 
+export const AttendeeListFields = gql`
+  fragment AttendeeListFields on Attendee {
+    id
+    firstName
+    lastName
+    guests
+    dateConfirmed     
+  }
+`;
 
 const { useBreakpoint } = Grid;
 
@@ -18,7 +28,7 @@ const AttendeeListPropTypes = {
   ).isRequired
 }
 
-interface AttendeeListProp {
+export interface AttendeeListProp {
   /**
   Sets button functionality based on the current user's logged in status.
   */
@@ -27,7 +37,7 @@ interface AttendeeListProp {
     firstName:string,
     lastName:string,
     guests:number,
-    dateConfirmed?:Date
+    dateConfirmed?: Date | null
   }[]
 }
 

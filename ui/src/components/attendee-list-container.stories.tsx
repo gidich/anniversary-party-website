@@ -5,6 +5,7 @@ import '../App.css';
 const sampleData = {
   attendees: [
     {
+      __typename: 'Attendee',
       id: 1,
       firstName: 'Jane',
       lastName: 'Doe',
@@ -12,6 +13,7 @@ const sampleData = {
       dateConfirmed: new Date('01/01/2021')
     },
     {
+      __typename: 'Attendee',
       id: 2,
       firstName: 'John',
       lastName: 'Doe',
@@ -19,14 +21,15 @@ const sampleData = {
       dateConfirmed: new Date('01/01/2021')
     },
     {
+      __typename: 'Attendee',
       id: 3,
       firstName: 'Sam',
       lastName: 'Smith',
       guests:1,
       dateConfirmed: new Date('01/01/2021')
-    }
-    ,
+    },
     {
+      __typename: 'Attendee',
       id: 4,
       firstName: 'Ama',
       lastName: 'Danara',
@@ -34,6 +37,7 @@ const sampleData = {
       dateConfirmed: null
     },
     {
+      __typename: 'Attendee',
       id: 5,
       firstName: 'Rami',
       lastName: 'Amol',
@@ -45,7 +49,7 @@ const sampleData = {
 
 
 export default {
-  title: 'Example/AttendeeList/Container',
+  title: 'Example/AttendeeListContainer',
   component: AttendeeListContainer,
   argTypes: {
     
