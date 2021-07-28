@@ -149,7 +149,7 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
                   </li>
                 </ul>
                 <p>
-                  Featuring Classic Stones Live - Rolling Stones Tribute featuring the Glimmer Twins [<a href='http://theglimmertwins.com/'  target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>] with My Drunk’n Uncle [<a href='https://www.mdurocks.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]<br/>
+                  Featuring Classic Stones Live - Rolling Stones Tribute featuring the Glimmer Twins [<a href='https://theglimmertwins.com/'  target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>] with My Drunk’n Uncle [<a href='https://www.mdurocks.com/' target='_blank' rel='noreferrer' onClick={trackOutboundLink}>Website</a>]<br/>
                   Food Trucks are available<br/>
                 </p>
               </Panel>
