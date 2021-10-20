@@ -12,6 +12,8 @@
 /build
 
 # misc
+/images
+/report
 .DS_Store
 .env.local
 .env.development.local
