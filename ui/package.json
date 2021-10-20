@@ -12,6 +12,7 @@
     "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.1.7",
     "antd": "^4.16.5",
+    "creevey": "^0.7.38",
     "ga-4-react": "^0.1.281",
     "graphql": "^15.5.1",
     "react": "^17.0.2",

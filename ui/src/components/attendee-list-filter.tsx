@@ -20,7 +20,8 @@ export const AttendeeListFilter: FC<ComponentProps> = ({
   filter = "registered",
   onFilterChange
   }) => { 
-    return <>
+    return <div id="selectAttendeeList">
+      
       <Select 
         defaultValue={filter}
         onChange={(value) => {if(typeof onFilterChange != 'undefined'){onFilterChange(value)}} } >
@@ -28,5 +29,5 @@ export const AttendeeListFilter: FC<ComponentProps> = ({
         <Option value="notregistered">Not Registered</Option>
         <Option value="all">All</Option>
       </Select>
-    </>
+    </div>
 }
