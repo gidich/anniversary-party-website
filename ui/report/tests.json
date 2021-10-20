@@ -1,0 +1,1215 @@
+{
+  "186d4eb1f6208db8b477b35b6663d380783996b2": {
+    "id": "186d4eb1f6208db8b477b35b6663d380783996b2",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "MDX",
+      "Leaf",
+      "Blueberry"
+    ],
+    "storyId": "mdx-leaf--blueberry",
+    "story": {
+      "id": "mdx-leaf--blueberry",
+      "kind": "MDX/Leaf",
+      "name": "Blueberry",
+      "story": "Blueberry",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\Leaf.stories.mdx",
+        "args": {},
+        "argTypes": {},
+        "__id": "mdx-leaf--blueberry",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "ba866fe715ed201dc9cca22629ea12a3341eb1a1": {
+    "id": "ba866fe715ed201dc9cca22629ea12a3341eb1a1",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "AttendeeListContainer",
+      "Container Default"
+    ],
+    "storyId": "example-attendeelistcontainer--container-default",
+    "story": {
+      "id": "example-attendeelistcontainer--container-default",
+      "kind": "Example/AttendeeListContainer",
+      "name": "Container Default",
+      "story": "Container Default",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\attendee-list-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-attendeelistcontainer--container-default",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "b88a9f5e4939aa99ea8679c866d76f7caadc5660": {
+    "id": "b88a9f5e4939aa99ea8679c866d76f7caadc5660",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "AttendeeListFilter",
+      "Registered"
+    ],
+    "storyId": "example-attendeelistfilter--registered",
+    "story": {
+      "id": "example-attendeelistfilter--registered",
+      "kind": "Example/AttendeeListFilter",
+      "name": "Registered",
+      "story": "Registered",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\attendee-list-filter.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-attendeelistfilter--registered",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }",
+    "status": "failed",
+    "results": [
+      {
+        "status": "failed",
+        "images": {
+          "chrome": {
+            "actual": "chrome-actual-1.png",
+            "error": "Expected image does not exists"
+          }
+        }
+      }
+    ]
+  },
+  "d05a06afc7128ac28af251f0f3781d3fb233ba5a": {
+    "id": "d05a06afc7128ac28af251f0f3781d3fb233ba5a",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "AttendeeList",
+      "Default View"
+    ],
+    "storyId": "example-attendeelist--default-view",
+    "story": {
+      "id": "example-attendeelist--default-view",
+      "kind": "Example/AttendeeList",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\attendee-list.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-attendeelist--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "3e7a0e1de759f968ddaac00122e007118b938cbd": {
+    "id": "3e7a0e1de759f968ddaac00122e007118b938cbd",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Authority Card Container",
+      "Default View"
+    ],
+    "storyId": "example-authority-card-container--default-view",
+    "story": {
+      "id": "example-authority-card-container--default-view",
+      "kind": "Example/Authority Card Container",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\authority-card-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-authority-card-container--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "aef16fee18c5db824586a52f833b6a9fb77dfa64": {
+    "id": "aef16fee18c5db824586a52f833b6a9fb77dfa64",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Authority Card List Container",
+      "Default View"
+    ],
+    "storyId": "example-authority-card-list-container--default-view",
+    "story": {
+      "id": "example-authority-card-list-container--default-view",
+      "kind": "Example/Authority Card List Container",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\authority-card-list-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-authority-card-list-container--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "8ffd6ddaf99c1173e37df969e4b4e76a9297ffcd": {
+    "id": "8ffd6ddaf99c1173e37df969e4b4e76a9297ffcd",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Authority Card List",
+      "Default View"
+    ],
+    "storyId": "example-authority-card-list--default-view",
+    "story": {
+      "id": "example-authority-card-list--default-view",
+      "kind": "Example/Authority Card List",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\authority-card-list.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-authority-card-list--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "24b6aff1dbd1c3348cbe2a33109e880433a9d811": {
+    "id": "24b6aff1dbd1c3348cbe2a33109e880433a9d811",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Authority Card",
+      "Default View"
+    ],
+    "storyId": "example-authority-card--default-view",
+    "story": {
+      "id": "example-authority-card--default-view",
+      "kind": "Example/Authority Card",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\authority-card.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-authority-card--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "884ad0e65a9e0b546c4d30316ca9eefcd8633863": {
+    "id": "884ad0e65a9e0b546c4d30316ca9eefcd8633863",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Examples",
+      "Button",
+      "With Args"
+    ],
+    "storyId": "examples-button--with-args",
+    "story": {
+      "id": "examples-button--with-args",
+      "kind": "Examples / Button",
+      "name": "With Args",
+      "story": "With Args",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "examples-button--with-args",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "783556437f64f65fe5845ede72e0fbe017d5cad5": {
+    "id": "783556437f64f65fe5845ede72e0fbe017d5cad5",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Examples",
+      "Button",
+      "Basic"
+    ],
+    "storyId": "examples-button--basic",
+    "story": {
+      "id": "examples-button--basic",
+      "kind": "Examples / Button",
+      "name": "Basic",
+      "story": "Basic",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "examples-button--basic",
+        "__isArgsStory": false
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "1c856172b8265e586a72d1bd5ee75673aba73ae7": {
+    "id": "1c856172b8265e586a72d1bd5ee75673aba73ae7",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Examples",
+      "Button",
+      "Story Object"
+    ],
+    "storyId": "examples-button--story-object",
+    "story": {
+      "id": "examples-button--story-object",
+      "kind": "Examples / Button",
+      "name": "Story Object",
+      "story": "Story Object",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "examples-button--story-object",
+        "__isArgsStory": false
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "838b614b14212ce49665816b2c13db28ce68e847": {
+    "id": "838b614b14212ce49665816b2c13db28ce68e847",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Examples",
+      "Button",
+      "Story No Render"
+    ],
+    "storyId": "examples-button--story-no-render",
+    "story": {
+      "id": "examples-button--story-no-render",
+      "kind": "Examples / Button",
+      "name": "Story No Render",
+      "story": "Story No Render",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "examples-button--story-no-render",
+        "__isArgsStory": false
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "868f3a9d9ece88338ed62a4a147435c2905cb799": {
+    "id": "868f3a9d9ece88338ed62a4a147435c2905cb799",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Examples",
+      "Button",
+      "Story With Play"
+    ],
+    "storyId": "examples-button--story-with-play",
+    "story": {
+      "id": "examples-button--story-with-play",
+      "kind": "Examples / Button",
+      "name": "Story With Play",
+      "story": "Story With Play",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "examples-button--story-with-play",
+        "__isArgsStory": false
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "10732a0752231a194d40358f8b63c4b558ddc389": {
+    "id": "10732a0752231a194d40358f8b63c4b558ddc389",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "CommercePage",
+      "Container Default"
+    ],
+    "storyId": "example-commercepage--container-default",
+    "story": {
+      "id": "example-commercepage--container-default",
+      "kind": "Example/CommercePage",
+      "name": "Container Default",
+      "story": "Container Default",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\commerce-page.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-commercepage--container-default",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "a92df7ce27cc37754284953d4dcbceaa3ef494d5": {
+    "id": "a92df7ce27cc37754284953d4dcbceaa3ef494d5",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "CustomerReview",
+      "Container Default"
+    ],
+    "storyId": "example-customerreview--container-default",
+    "story": {
+      "id": "example-customerreview--container-default",
+      "kind": "Example/CustomerReview",
+      "name": "Container Default",
+      "story": "Container Default",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\customer-review.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-customerreview--container-default",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "8f188d759e146f1848df7a7430f93869e739bff8": {
+    "id": "8f188d759e146f1848df7a7430f93869e739bff8",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Group Box",
+      "Normal"
+    ],
+    "storyId": "example-group-box--normal",
+    "story": {
+      "id": "example-group-box--normal",
+      "kind": "Example/Group Box",
+      "name": "Normal",
+      "story": "Normal",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\group-box.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-group-box--normal",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "cd798b56bd393ae4bea8307c0a86a35e62d9e167": {
+    "id": "cd798b56bd393ae4bea8307c0a86a35e62d9e167",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Leaf Bag Container",
+      "Default View"
+    ],
+    "storyId": "example-leaf-bag-container--default-view",
+    "story": {
+      "id": "example-leaf-bag-container--default-view",
+      "kind": "Example/Leaf Bag Container",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\leaf-bag-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-leaf-bag-container--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "15b8d952b0f7caa6bf60205e50c65e4534801c32": {
+    "id": "15b8d952b0f7caa6bf60205e50c65e4534801c32",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Leaf Bag Container",
+      "Empty View"
+    ],
+    "storyId": "example-leaf-bag-container--empty-view",
+    "story": {
+      "id": "example-leaf-bag-container--empty-view",
+      "kind": "Example/Leaf Bag Container",
+      "name": "Empty View",
+      "story": "Empty View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\leaf-bag-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-leaf-bag-container--empty-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "3882aca8589b1928108ae772c6c5654415b6ecb9": {
+    "id": "3882aca8589b1928108ae772c6c5654415b6ecb9",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Leaf Bag Container",
+      "Loading View"
+    ],
+    "storyId": "example-leaf-bag-container--loading-view",
+    "story": {
+      "id": "example-leaf-bag-container--loading-view",
+      "kind": "Example/Leaf Bag Container",
+      "name": "Loading View",
+      "story": "Loading View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\leaf-bag-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-leaf-bag-container--loading-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "1780aa342e2f9a195deeea5aade7855e9c29f6fe": {
+    "id": "1780aa342e2f9a195deeea5aade7855e9c29f6fe",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Leaf Bag",
+      "Default View"
+    ],
+    "storyId": "example-leaf-bag--default-view",
+    "story": {
+      "id": "example-leaf-bag--default-view",
+      "kind": "Example/Leaf Bag",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\leaf-bag.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-leaf-bag--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "9dbe87028fbdd9d8c569b7e212f10dbda81be4ec": {
+    "id": "9dbe87028fbdd9d8c569b7e212f10dbda81be4ec",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Leaf",
+      "Default View"
+    ],
+    "storyId": "example-leaf--default-view",
+    "story": {
+      "id": "example-leaf--default-view",
+      "kind": "Example/Leaf",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\leaf.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-leaf--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "87cfac80b9c962f01936698c6a4df3a2eb351486": {
+    "id": "87cfac80b9c962f01936698c6a4df3a2eb351486",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Link",
+      "First"
+    ],
+    "storyId": "link--first",
+    "story": {
+      "id": "link--first",
+      "kind": "Link",
+      "name": "First",
+      "story": "First",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\link.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "link--first",
+        "__isArgsStory": false
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "b907142f9b808c91fc7424c8309ffe7dc65a42b9": {
+    "id": "b907142f9b808c91fc7424c8309ffe7dc65a42b9",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "LoginButton",
+      "Logged In"
+    ],
+    "storyId": "example-loginbutton--logged-in",
+    "story": {
+      "id": "example-loginbutton--logged-in",
+      "kind": "Example/LoginButton",
+      "name": "Logged In",
+      "story": "Logged In",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\login-button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-loginbutton--logged-in",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "7291af635e41d94926afa0592303d73ed26ec6c1": {
+    "id": "7291af635e41d94926afa0592303d73ed26ec6c1",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "LoginButton",
+      "Logged Out"
+    ],
+    "storyId": "example-loginbutton--logged-out",
+    "story": {
+      "id": "example-loginbutton--logged-out",
+      "kind": "Example/LoginButton",
+      "name": "Logged Out",
+      "story": "Logged Out",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\login-button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-loginbutton--logged-out",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "8152f93d49bd28c56310a71228b33169800caeac": {
+    "id": "8152f93d49bd28c56310a71228b33169800caeac",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "OrderContainer",
+      "Container Default"
+    ],
+    "storyId": "example-ordercontainer--container-default",
+    "story": {
+      "id": "example-ordercontainer--container-default",
+      "kind": "Example/OrderContainer",
+      "name": "Container Default",
+      "story": "Container Default",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\order-container.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-ordercontainer--container-default",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "695881027260d45ac714e3871f7c6f90ab925c7e": {
+    "id": "695881027260d45ac714e3871f7c6f90ab925c7e",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "OrderItem",
+      "Default View"
+    ],
+    "storyId": "example-orderitem--default-view",
+    "story": {
+      "id": "example-orderitem--default-view",
+      "kind": "Example/OrderItem",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\order-item.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-orderitem--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "9d615f6b46bf19f8944b096f5aa3a8feb0008a13": {
+    "id": "9d615f6b46bf19f8944b096f5aa3a8feb0008a13",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Order",
+      "Default View"
+    ],
+    "storyId": "example-order--default-view",
+    "story": {
+      "id": "example-order--default-view",
+      "kind": "Example/Order",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\order.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-order--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "6c300003c0eefb527b52811145930e916665e5bf": {
+    "id": "6c300003c0eefb527b52811145930e916665e5bf",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "License Card List",
+      "One License"
+    ],
+    "storyId": "example-license-card-list--one-license",
+    "story": {
+      "id": "example-license-card-list--one-license",
+      "kind": "Example/License Card List",
+      "name": "One License",
+      "story": "One License",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\physician-license-card-list.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-license-card-list--one-license",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "222fe60b5f6d2a5411d5ef63a1f930f18a3a0dc0": {
+    "id": "222fe60b5f6d2a5411d5ef63a1f930f18a3a0dc0",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Product",
+      "Default View"
+    ],
+    "storyId": "example-product--default-view",
+    "story": {
+      "id": "example-product--default-view",
+      "kind": "Example/Product",
+      "name": "Default View",
+      "story": "Default View",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\product.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-product--default-view",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "2e3e1b5694a9896963d7c7182ab91194086f3602": {
+    "id": "2e3e1b5694a9896963d7c7182ab91194086f3602",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "CustomerReviews",
+      "Container Default"
+    ],
+    "storyId": "example-customerreviews--container-default",
+    "story": {
+      "id": "example-customerreviews--container-default",
+      "kind": "Example/CustomerReviews",
+      "name": "Container Default",
+      "story": "Container Default",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\review-container-by-customer.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-customerreviews--container-default",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "1344bf2242a4b7fffe71044aa2eb8dec4619b36a": {
+    "id": "1344bf2242a4b7fffe71044aa2eb8dec4619b36a",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Review",
+      "Review With Five Start Rating"
+    ],
+    "storyId": "example-review--review-with-five-start-rating",
+    "story": {
+      "id": "example-review--review-with-five-start-rating",
+      "kind": "Example/Review",
+      "name": "Review With Five Start Rating",
+      "story": "Review With Five Start Rating",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\review.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-review--review-with-five-start-rating",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "066dd947976b1703b19eea81c3a4dfc57c8ce659": {
+    "id": "066dd947976b1703b19eea81c3a4dfc57c8ce659",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Review",
+      "Review With No Star Rating"
+    ],
+    "storyId": "example-review--review-with-no-star-rating",
+    "story": {
+      "id": "example-review--review-with-no-star-rating",
+      "kind": "Example/Review",
+      "name": "Review With No Star Rating",
+      "story": "Review With No Star Rating",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\review.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-review--review-with-no-star-rating",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "0f00f89378febaf4db7d7a663b1ad36b4e0d7ccc": {
+    "id": "0f00f89378febaf4db7d7a663b1ad36b4e0d7ccc",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Review",
+      "Review With No Description"
+    ],
+    "storyId": "example-review--review-with-no-description",
+    "story": {
+      "id": "example-review--review-with-no-description",
+      "kind": "Example/Review",
+      "name": "Review With No Description",
+      "story": "Review With No Description",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\review.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-review--review-with-no-description",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "2679bb95f64ccbc618f12e25794abb1c7bc9e52b": {
+    "id": "2679bb95f64ccbc618f12e25794abb1c7bc9e52b",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Task",
+      "Default"
+    ],
+    "storyId": "task--default",
+    "story": {
+      "id": "task--default",
+      "kind": "Task",
+      "name": "Default",
+      "story": "Default",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\tutorial\\task.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "task--default",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "afd73bec48d51c6ce9016b5e43b5f2681435ebf0": {
+    "id": "afd73bec48d51c6ce9016b5e43b5f2681435ebf0",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Task",
+      "Pinned"
+    ],
+    "storyId": "task--pinned",
+    "story": {
+      "id": "task--pinned",
+      "kind": "Task",
+      "name": "Pinned",
+      "story": "Pinned",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\components\\tutorial\\task.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "task--pinned",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "5bdbfb01e960a96427fadc530be6d84d12652736": {
+    "id": "5bdbfb01e960a96427fadc530be6d84d12652736",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Button",
+      "Primary"
+    ],
+    "storyId": "example-button--primary",
+    "story": {
+      "id": "example-button--primary",
+      "kind": "Example/Button",
+      "name": "Primary",
+      "story": "Primary",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-button--primary",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "f48c551eeb46de20261aa018ae32d353b349790b": {
+    "id": "f48c551eeb46de20261aa018ae32d353b349790b",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Button",
+      "Secondary"
+    ],
+    "storyId": "example-button--secondary",
+    "story": {
+      "id": "example-button--secondary",
+      "kind": "Example/Button",
+      "name": "Secondary",
+      "story": "Secondary",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-button--secondary",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "fa8f0ab5581be0b47c02ae416b23d7890b4ce1cf": {
+    "id": "fa8f0ab5581be0b47c02ae416b23d7890b4ce1cf",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Button",
+      "Large"
+    ],
+    "storyId": "example-button--large",
+    "story": {
+      "id": "example-button--large",
+      "kind": "Example/Button",
+      "name": "Large",
+      "story": "Large",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-button--large",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "cf6b62218d847c2282c5c0f15e50a3be3b9d2a96": {
+    "id": "cf6b62218d847c2282c5c0f15e50a3be3b9d2a96",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Button",
+      "Small"
+    ],
+    "storyId": "example-button--small",
+    "story": {
+      "id": "example-button--small",
+      "kind": "Example/Button",
+      "name": "Small",
+      "story": "Small",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Button.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-button--small",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "bbdae1d42b62614a1376641cbfd5f33a017a92de": {
+    "id": "bbdae1d42b62614a1376641cbfd5f33a017a92de",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Header",
+      "Logged In"
+    ],
+    "storyId": "example-header--logged-in",
+    "story": {
+      "id": "example-header--logged-in",
+      "kind": "Example/Header",
+      "name": "Logged In",
+      "story": "Logged In",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Header.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-header--logged-in",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "0231b96493785bf042108b9e34c1677b956a7336": {
+    "id": "0231b96493785bf042108b9e34c1677b956a7336",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Header",
+      "Logged Out"
+    ],
+    "storyId": "example-header--logged-out",
+    "story": {
+      "id": "example-header--logged-out",
+      "kind": "Example/Header",
+      "name": "Logged Out",
+      "story": "Logged Out",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Header.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-header--logged-out",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "7b300392e9375b285333436f01f746f8d92b90f5": {
+    "id": "7b300392e9375b285333436f01f746f8d92b90f5",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Page",
+      "Logged In"
+    ],
+    "storyId": "example-page--logged-in",
+    "story": {
+      "id": "example-page--logged-in",
+      "kind": "Example/Page",
+      "name": "Logged In",
+      "story": "Logged In",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Page.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-page--logged-in",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  },
+  "8a629e3b1e1f5e0b4ddaa2a2d2d77a708a981eb1": {
+    "id": "8a629e3b1e1f5e0b4ddaa2a2d2d77a708a981eb1",
+    "skip": false,
+    "browser": "chrome",
+    "storyPath": [
+      "Example",
+      "Page",
+      "Logged Out"
+    ],
+    "storyId": "example-page--logged-out",
+    "story": {
+      "id": "example-page--logged-out",
+      "kind": "Example/Page",
+      "name": "Logged Out",
+      "story": "Logged Out",
+      "parameters": {
+        "framework": "react",
+        "fileName": "C:\\Git\\anniversary-party-website\\ui\\src\\stories\\Page.stories.tsx",
+        "args": {},
+        "argTypes": {},
+        "__id": "example-page--logged-out",
+        "__isArgsStory": true
+      },
+      "args": {},
+      "initialArgs": {}
+    },
+    "fn": "async function storyTest() {\n    var _testFn$call;\n\n    delay ? await new Promise(resolve => setTimeout(resolve, delay)) : void 0;\n    await ((_testFn$call = testFn === null || testFn === void 0 ? void 0 : testFn.call(this)) !== null && _testFn$call !== void 0 ? _testFn$call : this.expect(await this.takeScreenshot()).to.matchImage());\n  }"
+  }
+}

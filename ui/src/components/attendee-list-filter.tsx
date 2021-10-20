@@ -6,27 +6,41 @@ const { Option } = Select;
 
 const ComponentPropTypes = {
   filter: PropTypes.string,
-  onFilterChange: PropTypes.func
-}
+  onFilterChange: PropTypes.func,
+};
 
 interface ComponentProp {
-  filter?: string,
-  onFilterChange?: (filter:string) => void,
+  filter?: string;
+  onFilterChange?: (filter: string) => void;
 }
 
-export type ComponentProps = InferProps<typeof ComponentPropTypes> & ComponentProp;
+export type ComponentProps = InferProps<typeof ComponentPropTypes> &
+  ComponentProp;
 
 export const AttendeeListFilter: FC<ComponentProps> = ({
-  filter = "registered",
-  onFilterChange
-  }) => { 
-    return <>
-      <Select 
+  filter = 'registered',
+  onFilterChange,
+}) => {
+  return (
+    <>
+      <Select
         defaultValue={filter}
-        onChange={(value) => {if(typeof onFilterChange != 'undefined'){onFilterChange(value)}} } >
-        <Option value="registered">Registered</Option>
-        <Option value="notregistered">Not Registered</Option>
-        <Option value="all">All</Option>
+        onChange={(value) => {
+          if (typeof onFilterChange != 'undefined') {
+            onFilterChange(value);
+          }
+        }}
+      >
+        <Option value="registered" id="registered">
+          Registered
+        </Option>
+        <Option value="notregistered" id="notregistered">
+          Not Registered
+        </Option>
+        <Option value="all" id="all">
+          All
+        </Option>
       </Select>
     </>
-}
+  );
+};

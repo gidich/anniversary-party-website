@@ -1,8 +1,9 @@
-import { MockedProvider } from '@apollo/client/testing';
+import { MockedProvider } from "@apollo/client/testing";
+import "../src/index.css";
 
 export const parameters = {
   apolloClient: {
-    MockedProvider
+    MockedProvider,
   },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -11,4 +12,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};

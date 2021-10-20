@@ -1,5 +1,4 @@
-@import '~antd/dist/antd.css';
-
+@import "~antd/dist/antd.css";
 
 .ant-layout.layout {
   min-height: 100vh;
@@ -8,25 +7,25 @@
 .site-layout .site-layout-content {
   background: #fff;
   min-height: 85vh;
-  padding:24px;
+  padding: 24px;
 }
 .ant-layout-content.site-layout {
   padding: 0 50px;
-  margin-top:64px;
+  margin-top: 64px;
 }
 
-.ant-menu-submenu.ant-menu-submenu-popup .ant-menu.ant-menu-sub.ant-menu-vertical {
-  margin-top:-10px;
+.ant-menu-submenu.ant-menu-submenu-popup
+  .ant-menu.ant-menu-sub.ant-menu-vertical {
+  margin-top: -10px;
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
   .site-layout .site-layout-content {
-    padding:24px 15px;
-    
+    padding: 24px 15px;
   }
   .ant-layout-content.site-layout {
     padding: 0 10px;
-    margin-top:50px;
+    margin-top: 50px;
   }
 
   /*
@@ -39,4 +38,154 @@
     height: 50px;
     line-height: 50px;
   }
+}
+.checkbox {
+  display: inline-block;
+  height: 3rem;
+  position: relative;
+  vertical-align: middle;
+  width: 44px;
+}
+.checkbox input[type="checkbox"] {
+  font-size: 1em;
+  visibility: hidden;
+}
+.checkbox input[type="checkbox"] + span:before {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  width: 0.85em;
+  height: 0.85em;
+  transform: translate3d(-50%, -50%, 0);
+  background: transparent;
+  box-shadow: #2cc5d2 0 0 0 1px inset;
+  content: "";
+  display: block;
+}
+.checkbox input[type="checkbox"]:checked + span:before {
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: none;
+  color: #2cc5d2;
+  margin-top: -1px;
+  font-family: "percolate";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e65e";
+}
+.list-item .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.wrapper-message .title-message {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #555;
+}
+
+.page.lists-show nav .title-page {
+  font-size: 20px;
+  line-height: 24px;
+  line-height: 2rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.page.lists-show nav .title-page .title-wrapper {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #1c3f53;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.icon-star:before {
+  content: "\e608";
+}
+.icon-star-hollow:before {
+  content: "\e609";
+}
+
+.list-item {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 3rem;
+  width: 100%;
+  background: white;
+  transition: all ease-out 150ms;
+}
+.list-item .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+.list-item input[type="text"] {
+  background: transparent;
+  width: 100%;
+}
+.list-item input[type="text"]:focus {
+  cursor: text;
+}
+.list-item .actions {
+  transition: all 200ms ease-in;
+  padding-right: 20px;
+}
+.list-item .actions a {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color: #eee;
+}
+.list-item .actions a:hover {
+  color: #2cc5d2;
+}
+.list-item .actions a:active {
+  color: #555;
+}
+.list-item .actions [class^="icon-"] {
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 3rem;
+  text-align: center;
+}
+.list-item.TASK_PINNED .icon-star {
+  color: #2cc5d2;
+}
+.list-item.TASK_ARCHIVED input[type="text"] {
+  color: #aaa;
+}
+.list-item:hover {
+  background-image: linear-gradient(to bottom, #e5f9f7 0%, #f0fffd 100%);
+}
+.list-item:hover .checkbox {
+  cursor: pointer;
+}
+.list-item + .list-item {
+  border-top: 1px solid #f0f9fb;
+}
+.list-item.checked input[type="text"] {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.list-item.checked .delete-item {
+  display: inline-block;
 }

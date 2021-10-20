@@ -1,95 +1,133 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { AttendeeData, AttendeeListContainer, Queries } from './attendee-list-container';
+import {
+  AttendeeData,
+  AttendeeListContainer,
+  Queries,
+} from './attendee-list-container';
 import '../App.css';
 
-const sampleData = {
+const sampleData: AttendeeData = {
   attendees: [
     {
       __typename: 'Attendee',
-      id: 1,
+      id: 1234,
       firstName: 'Jane',
       lastName: 'Doe',
-      guests:1,
-      dateConfirmed: new Date('01/01/2021')
+      guests: 1,
+      dateConfirmed: new Date('01/01/2021'),
     },
     {
       __typename: 'Attendee',
-      id: 2,
+      id: 1234,
       firstName: 'John',
       lastName: 'Doe',
-      guests:1,
-      dateConfirmed: new Date('01/01/2021')
+      guests: 1,
+      dateConfirmed: new Date('01/01/2021'),
     },
     {
       __typename: 'Attendee',
-      id: 3,
+      id: 1234,
       firstName: 'Sam',
       lastName: 'Smith',
-      guests:1,
-      dateConfirmed: new Date('01/01/2021')
+      guests: 1,
     },
-    {
-      __typename: 'Attendee',
-      id: 4,
-      firstName: 'Ama',
-      lastName: 'Danara',
-      guests:1,
-      dateConfirmed: null
-    },
-    {
-      __typename: 'Attendee',
-      id: 5,
-      firstName: 'Rami',
-      lastName: 'Amol',
-      guests:1,
-      dateConfirmed: null
-    }
-]
-} as AttendeeData
-
+    // {
+    //   // __typename: 'Attendee',
+    //   id: 1,
+    //   firstName: 'Jane',
+    //   lastName: 'Doe',
+    //   guests: 1,
+    //   dateConfirmed: new Date('01/01/2021'),
+    // },
+    // {
+    //   // __typename: 'Attendee',
+    //   id: 2,
+    //   firstName: 'John',
+    //   lastName: 'Doe',
+    //   guests: 1,
+    //   dateConfirmed: new Date('01/01/2021'),
+    // },
+    // {
+    //   // __typename: 'Attendee',
+    //   id: 3,
+    //   firstName: 'Sam',
+    //   lastName: 'Smith',
+    //   guests: 1,
+    //   dateConfirmed: new Date('01/01/2021'),
+    // },
+    // {
+    //   // __typename: 'Attendee',
+    //   id: 4,
+    //   firstName: 'Ama',
+    //   lastName: 'Danara',
+    //   guests: 1,
+    //   dateConfirmed: null,
+    // },
+    // {
+    //   // __typename: 'Attendee',
+    //   id: 5,
+    //   firstName: 'Rami',
+    //   lastName: 'Amol',
+    //   guests: 1,
+    //   dateConfirmed: null,
+    // },
+  ],
+};
 
 export default {
   title: 'Example/AttendeeListContainer',
   component: AttendeeListContainer,
-  argTypes: {
-    
-  },
+  argTypes: {},
 } as ComponentMeta<typeof AttendeeListContainer>;
 
-const Template: ComponentStory<typeof AttendeeListContainer> = (args) => <AttendeeListContainer {...args} />;
+const Template: ComponentStory<typeof AttendeeListContainer> = (args) => (
+  <AttendeeListContainer {...args} />
+);
 
 export const ContainerDefault = Template.bind({});
 
 ContainerDefault.parameters = {
   apolloClient: {
+    addTypename: false,
     mocks: [
       {
+        delay: 1000,
         request: {
           query: Queries.GetAttendesQuery,
-          variables: {status: 'registered'}
+          variables: { status: 'registered' },
         },
         result: {
-          data: {attendees:sampleData.attendees.filter(attendee => attendee.dateConfirmed !== null)}
-        }
+          data: {
+            attendees: sampleData.attendees.filter(
+              (attendee) => attendee.dateConfirmed !== null
+            ),
+          },
+        },
       },
       {
+        delay: 1000,
         request: {
           query: Queries.GetAttendesQuery,
-          variables: {status: 'notregistered'}
+          variables: { status: 'notregistered' },
         },
         result: {
-          data: {attendees:sampleData.attendees.filter(attendee => attendee.dateConfirmed == null)}
-        }
+          data: {
+            attendees: sampleData.attendees.filter(
+              (attendee) => attendee.dateConfirmed == null
+            ),
+          },
+        },
       },
       {
+        delay: 1000,
         request: {
           query: Queries.GetAttendesQuery,
-          variables: {status: 'all'}
+          variables: { status: 'all' },
         },
         result: {
-          data: {attendees:sampleData.attendees}
-        }
-      }
-    ]
-  }
-}
+          data: { attendees: sampleData.attendees },
+        },
+      },
+    ],
+  },
+};
