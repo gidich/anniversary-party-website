@@ -11,19 +11,20 @@ module.exports = {
   reportDir: path.join(__dirname, "../report"),
   //allowed threshold of error in images
   diffOptions: { threshold: 0.1 },
-  maxRetries: 0,
+  maxRetries: 7,
   browsers: {
+    // chrome: true,
     chrome: {
       browserName: "chrome",
       viewport: { width: 1024, height: 720 },
-      // Increse parallel sessions
+      // Increase parallel sessions
       limit: 1,
     },
-    firefox: {
-      browserName: "firefox",
-      viewport: { width: 1024, height: 720 },
-      // Increse parallel sessions
-      limit: 1,
-    },
+    // firefox: {
+    //   browserName: "firefox",
+    //   viewport: { width: 1024, height: 720 },
+    //   // Increase parallel sessions
+    //   limit: 1,
+    // },
   },
 };
