@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useGA4React } from "ga-4-react";
 import { Helmet } from 'react-helmet';
 import { MenuOutlined } from '@ant-design/icons';
+import { AttendeeListFilter } from "./attendee-list-filter";
 
 
 const { Header,  Content } = Layout;
@@ -80,6 +81,7 @@ const Schedule: FC< RouteComponentProps| any> = (props) => {
           <div className="site-layout-content">
             <h1>Sandy and Dennis Gidich's 50+1 Anniversary Party!</h1>
             <Collapse defaultActiveKey={['2']} onChange={onPanelChange} >
+              <AttendeeListFilter onFilterChange={() => {}} />
               <Panel header="Friday, July 2nd" key="2" >
               <h3>Dinner</h3>
                 <p>

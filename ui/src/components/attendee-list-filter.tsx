@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Select } from 'antd';
+import { Select, Button } from 'antd';
 import PropTypes, { InferProps } from 'prop-types';
 
 const { Option } = Select;
@@ -21,12 +21,16 @@ export const AttendeeListFilter: FC<ComponentProps> = ({
   onFilterChange
   }) => { 
     return <>
+      <Button id='button-id' onClick={() => {console.log("clicked")}} >
+        button
+      </Button>
       <Select 
+        id="attendee-list-filter"
         defaultValue={filter}
         onChange={(value) => {if(typeof onFilterChange != 'undefined'){onFilterChange(value)}} } >
-        <Option value="registered">Registered</Option>
-        <Option value="notregistered">Not Registered</Option>
-        <Option value="all">All</Option>
+        <Option id="filter-registered" value="registered">Registered</Option>
+        <Option id="filter-notregistered" value="notregistered">Not Registered</Option>
+        <Option id="filter-all" value="all">All</Option>
       </Select>
     </>
 }
