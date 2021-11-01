@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.4.16",
-    "@storybook/addon-knobs": "^6.3.1",
+    "@playwright/test": "^1.16.2",
     "@storybook/addon-storyshots": "^6.3.12",
     "@storybook/addon-storyshots-puppeteer": "^6.3.12",
     "@testing-library/jest-dom": "^5.14.1",
@@ -17,7 +17,6 @@
     "antd": "^4.16.13",
     "ga-4-react": "^0.1.281",
     "graphql": "^15.6.1",
-    "playwright": "^1.16.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
@@ -25,7 +24,6 @@
     "react-scripts": "4.0.3",
     "react-test-renderer": "^17.0.2",
     "source-map-explorer": "^2.5.2",
-    "storybook-addon-playwright": "^4.7.2",
     "typescript": "^4.4.4",
     "web-vitals": "^1.1.2"
   },
@@ -70,6 +68,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-knobs": "^6.3.1",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/node-logger": "^6.3.12",
     "@storybook/preset-create-react-app": "^3.2.0",
@@ -78,6 +77,10 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "chromatic": "^5.10.2",
-    "storybook-addon-apollo-client": "^4.0.9"
+    "storybook-addon-apollo-client": "^4.0.9",
+    "storybook-addon-playwright": "^4.7.2"
+  },
+  "browser": {
+    "child_process": false
   }
 }
