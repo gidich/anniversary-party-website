@@ -21,11 +21,8 @@ export const AttendeeListFilter: FC<ComponentProps> = ({
   onFilterChange
   }) => { 
     return <>
-      <Button id='button-id' onClick={() => {console.log("clicked")}} >
-        button
-      </Button>
       <Select 
-        id="attendee-list-filter"
+        id="filter-select"
         defaultValue={filter}
         onChange={(value) => {if(typeof onFilterChange != 'undefined'){onFilterChange(value)}} } >
         <Option id="filter-registered" value="registered">Registered</Option>
